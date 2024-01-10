@@ -1,38 +1,110 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+.contianer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./Assests/backcloud.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.data_wrapper {
+  width: 50vw;
+  background-color: rgba(43, 165, 226, 0.219);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: 1s ease;
+}
+.title {
+  margin-bottom: 40px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper_row {
+  display: flex;
+  flex-direction: column;
+}
+.search_bar {
+  position: relative;
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.custom_input {
+  height: 100%;
+  width: 100%;
+}
+.custom_form {
+  background-color: transparent;
+  border-radius: 5px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search_icon {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cross_icon {
+  position: absolute;
+  right: 40px;
+}
+.weather_details {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s ease;
+}
+.main_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.weather_icon {
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.windspeed,
+.humidity,
+.temp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.description {
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+/* .fadeIn {
+  animation: 0.5s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+@keyframes fade_in {
   to {
-    transform: rotate(360deg);
+    scale: 1;
+    opacity: 1;
   }
-}
+} */
